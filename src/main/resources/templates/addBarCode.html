@@ -45,6 +45,13 @@
                    th:href="${(basket.isIdOnList(item.getId()) ? '/remove/' : '/add/') + item.getId()}"></a></td>
         </tr>
     </table>
+    <!--js solution -->
+    <button onclick="location.href='http://google.pl'"> Google </button>
+   <!-- thymeleaf solution-->
+    <br/>
+   <!--
+   <button th:onclick="${'location.href=\\'http://' + basket.getBasketSize() + '\''}"> BasketSize </button>
+   -->
 </div>
 </body>
 </html>

@@ -22,9 +22,9 @@ public class BasketService {
     }
 
     public void removeProdFromList(int id){
-        for(BarCodeEntity entity : barCodeEntityList) {
-            if (entity.getId() == id) {
-                barCodeEntityList.add(entity);
+        for(int i = 0; i < barCodeEntityList.size(); i++) {
+            if (barCodeEntityList.get(i).getId() == id) {
+                barCodeEntityList.remove(i);
             }
         }
     }
